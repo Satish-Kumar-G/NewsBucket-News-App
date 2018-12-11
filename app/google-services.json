@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "860109212945",
+    "firebase_url": "https://news-bucket-b785a.firebaseio.com",
+    "project_id": "news-bucket-b785a",
+    "storage_bucket": "news-bucket-b785a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860109212945:android:0a8bd80992555f84",
+        "android_client_info": {
+          "package_name": "com.dcoders.satishkumar.g.newsbucket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860109212945-uml1qrkau3d3j6emkbjpucl00fb0056g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dcoders.satishkumar.g.newsbucket",
+            "certificate_hash": "9d3198d643227c67c6dd99f9b17cc1d389a2f51e"
+          }
+        },
+        {
+          "client_id": "860109212945-ib9be638je6g25hld7dh9ilc014vqk37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPHiobWvJfK3S3yeVq8BW9-EnoQYu8jjY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860109212945-ib9be638je6g25hld7dh9ilc014vqk37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

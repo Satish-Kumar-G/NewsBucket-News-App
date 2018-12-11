@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.dcoders.satishkumar.g.newsbucket"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildTypes.each {
+            it.buildConfigField('String', 'APIKEY', api_key)
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file("$rootDir/mykeystore.jks")
+            storePassword "satish123"
+            keyPassword "satish123"
+            keyAlias "key0"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+}
+
+
+dependencies {
+    ext {
+        supportLibVersion = '27.1.1'
+        constraintLayoutVersion = '1.1.2'
+        gsonLibVersion = '2.8.5'
+        butterknifeLibVersion = '8.8.1'
+        volleyLibVersion = '1.1.0'
+        glideLibVersion = '4.7.1'
+        room_version = '1.1.1'
+        junitLibVersion = '4.12'
+        firebaseLibVersion = '16.0.1'
+        firebaseAdsLibVersion = '15.0.1'
+    }
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+
+    implementation 'com.google.android.gms:play-services-auth:15.0.1'
+    implementation "com.google.firebase:firebase-core:$firebaseLibVersion"
+    implementation "com.google.firebase:firebase-ads:$firebaseAdsLibVersion"
+
+    implementation "android.arch.persistence.room:runtime:$room_version"
+    annotationProcessor "android.arch.persistence.room:compiler:$room_version"
+    androidTestImplementation "android.arch.persistence.room:testing:$room_version"
+    // Lifecycle components
+    implementation "android.arch.lifecycle:extensions:$room_version"
+    annotationProcessor "android.arch.lifecycle:compiler:$room_version"
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "com.android.support:cardview-v7:$supportLibVersion"
+
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+    testImplementation "junit:junit:$junitLibVersion"
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    //butterknife
+    implementation "com.jakewharton:butterknife:$butterknifeLibVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeLibVersion"
+    //volley
+    implementation "com.android.volley:volley:$volleyLibVersion"
+    //glide
+    implementation "com.github.bumptech.glide:glide:$glideLibVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideLibVersion"
+    //gson
+    implementation "com.google.code.gson:gson:$gsonLibVersion"
+    implementation "com.android.support:recyclerview-v7:$supportLibVersion"
+    implementation "com.android.support:design:$supportLibVersion"
+    implementation "com.android.support:support-v4:$supportLibVersion"
+
+    androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'design'
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
+}

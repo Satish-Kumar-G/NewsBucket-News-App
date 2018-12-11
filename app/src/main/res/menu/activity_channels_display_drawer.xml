@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/abc_news"
+            android:icon="@drawable/abcnews"
+            android:title="@string/abc_news" />
+        <item
+            android:id="@+id/bbc_news"
+            android:icon="@drawable/bbcnews"
+            android:title="@string/bbc_news" />
+        <item
+            android:id="@+id/bbc_sports"
+            android:icon="@drawable/bbcsport"
+            android:title="@string/bbc_sports" />
+       <item
+           android:icon="@drawable/businessinsider"
+           android:id="@+id/business_insider"
+           android:title="@string/business_insider_uk"
+           />
+        <item
+            android:id="@+id/cbc_news"
+            android:icon="@drawable/cbcnews"
+            android:title="@string/cbc_news" />
+        <item
+            android:id="@+id/cnn_news"
+            android:title="@string/cnn_news"
+            android:icon="@drawable/cnnnews"/>
+        <item
+            android:id="@+id/entertainment_weekly"
+            android:icon="@drawable/entertainmentweekly"
+            android:title="@string/entertainment_weekly"/>
+        <item
+            android:id="@+id/espn_news"
+            android:title="@string/espn"
+            android:icon="@drawable/espn"/>
+        <item
+            android:id="@+id/financial_times"
+            android:title="@string/financial_times"
+            android:icon="@drawable/financialtimes"/>
+        <item
+            android:id="@+id/google_news_india"
+            android:icon="@drawable/googlenewsindia"
+            android:title="@string/google_news_india"/>
+        <item
+            android:id="@+id/hacker_news"
+            android:icon="@drawable/hackernews"
+            android:title="@string/hacker_news"/>
+        <item
+            android:id="@+id/national_geographic"
+            android:icon="@drawable/nationalgeographic"
+            android:title="@string/national_geographic"/>
+        <item
+            android:id="@+id/the_hindu"
+            android:icon="@drawable/thehindu"
+            android:title="@string/the_hindu"/>
+        <item
+            android:id="@+id/the_newyork_times"
+            android:title="@string/the_newyork_times"
+            android:icon="@drawable/thenewyorktimes"/>
+        <item
+            android:id="@+id/the_times_of_india"
+            android:icon="@drawable/timesofindia"
+            android:title="@string/the_times_of_india"/>
+        <item
+            android:id="@+id/time"
+            android:icon="@drawable/time"
+            android:title="@string/time"/>
+        <item
+            android:id="@+id/favorites"
+            android:title="@string/favorites"
+            android:icon="@drawable/ic_favorite_black_24dp"/>
+
+    </group>
+
+
+
+</menu>
